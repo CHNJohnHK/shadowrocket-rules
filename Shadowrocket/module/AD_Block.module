@@ -1,4 +1,4 @@
-#!url=https://github.com/CHNJohnHK/Proxy_Config/blob/742c137b35510f355aacb8e5efde7af5fb617deb/Shadowrocket/module/AD_Block.module
+#!url=https://raw.githubusercontent.com/CHNJohnHK/Proxy_Config/main/Shadowrocket/module/AD_Block.module
 #!name=AD Block + Unlock
 #!desc=JohnHK's Module
 # 仅供学习交流 🈲️商业用途
@@ -95,7 +95,7 @@ DOMAIN,www.qchannel01.cn,REJECT
 DOMAIN,iqiyi-mipdx.cn.miaozhen.com,REJECT
 DOMAIN,show.ssports.com,REJECT
 DOMAIN-SUFFIX,afdback.ppsimg.com,REJECT
-#米读
+# 米读
 URL-REGEX,^https:\/\/apiwz\.midukanshu\.com\/advert\/getPopup$,REJECT
 URL-REGEX,^https:\/\/apiwz\.midukanshu\.com\/advert\/treasureInfo$,REJECT
 URL-REGEX,^https:\/\/apiwz\.midukanshu\.com\/config\/getAds$,REJECT
@@ -111,7 +111,7 @@ URL-REGEX,^http:\/\/.*\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 # 高德地图
 DOMAIN,optimus-ads.amap.com,REJECT
 
-#backiee
+# backiee
 URL-REGEX,^https:\/\/www\.google\.com\.hk\/ads,REJECT
 DOMAIN,stats.g.doubleclick.net,REJECT
 DOMAIN,pagead2.googlesyndication.com,REJECT
@@ -212,30 +212,30 @@ http:\/\/analytics\.163\.com\/ntes - reject
 # 搬运淘宝 by gitee-木剑 ->gw.alicdn.com,heic.alicdn.com
 ^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/.+\.jpg_(9\d{2}|\d{4}) - reject
 ^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_(9\d{2}|\d{4}) - reject
-# > 哔哩哔哩屏蔽广告浮窗
+# 哔哩哔哩屏蔽广告浮窗
 ^https?:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive - reject-dict
-# > 哔哩哔哩屏蔽IP请求
+# 哔哩哔哩屏蔽IP请求
 ^https?:\/\/app\.bilibili\.com\/x\/resource\/ip - reject
-# > 哔哩哔哩屏蔽DefaultWord
+# 哔哩哔哩屏蔽DefaultWord
 ^https?:\/\/app\.bilibili\.com\/bilibili\.app\.interface\.v1\.Search\/Default - reject
-# > 哔哩哔哩屏蔽首页右上活动[卸载重装]
+# 哔哩哔哩屏蔽首页右上活动[卸载重装]
 ^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity - reject-dict
-# > 哔哩哔哩应用开屏去广告
+# 哔哩哔哩应用开屏去广告
 ^https://app.bilibili.com/x/v2/splash/show - reject-dict
-# > 哔哩哔哩Defaultword
+# 哔哩哔哩Defaultword
 ^https://app.bilibili.com/x/v2/search/defaultwords - reject-dict
-# > 哔哩哔哩Material_Ad
+# 哔哩哔哩Material_Ad
 ^https?:\/\/api\.bilibili\.com\/x\/vip\/ads\/material\/report - reject-dict
-# > 哔哩哔哩小卡片广告
+# 哔哩哔哩小卡片广告
 ^https://api.bilibili.com/pgc/season/player/cards - reject-dict
-# > 哔哩哔哩去除动态中的话题
+# 哔哩哔哩去除动态中的话题
 ^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr - reject-dict
-# > 哔哩哔哩漫画去广告
+# 哔哩哔哩漫画去广告
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/(Flash|ListFlash) - reject-dict
-# > bilibili - app.bilibili.com,manga.bilibili.com by deezertidal
+# bilibili - app.bilibili.com,manga.bilibili.com by deezertidal
 ^https?:\/\/app\.bilibili\.com\/x\/v\d\/splash\/ - reject
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash - reject
-# > Google
+# Google
 ^https?:\/\/.+\.googleapis.com/.+ad_break - reject-img
 ^https?:\/\/.+?\.googlevideo\.com\/ptracking\?pltype=adhost - reject-img
 ^https?:\/\/.+\.googleapis.com/.+log_event - reject-img
@@ -245,9 +245,9 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/pagead2\.googlesyndication\.com\/pagead\/ - reject-img
 ^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) - reject
 ^https?:\/\/.+\.googlevideo\.com\/videogoodput - reject-img
-# > CSDN
+# CSDN
 ^https?:\/\/gw\.csdn\.net\/cms-app\/v\d+\/home_page\/open_advertisement - reject
-# > spotify
+# Spotify
 ^https?:\/\/spclient\.wg\.spotify\.com\/.+ad_slot - reject-img
 ^https?:\/\/spclient\.wg\.spotify\.com\/.+banners - reject-img
 ^https?:\/\/spclient\.wg\.spotify\.com\/.+crashlytics - reject-img
@@ -269,31 +269,31 @@ http-response ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positiv
 AdGuard 解锁永久高级版 = type=http-response,pattern=^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt,requires-body=1,max-size=0,script-path=https://github.com/itcast-l/shadowrocket-module/raw/main/js/Adguard.js
 # 百度网盘解锁倍速 by Nobyda
 http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path=https://raw.githubusercontent.com/chengkongyiban/shadowrocket/main/scripts/bdcloud.js,requires-body=true,script-update-interval=0,tag=BaiduCloud
-# > 哔哩哔哩Proto去广告
+# 哔哩哔哩Proto去广告
 bilibili-proto = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$,requires-body=1,max-size=0,binary-body-mode=1,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-proto.js
-# > 哔哩哔哩观影页面去广告
+# 哔哩哔哩观影页面去广告
 bilibili_json = type=http-response,pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/bilibili_json.js
-# > 哔哩哔哩应用开屏广告预加载
+# 哔哩哔哩应用开屏广告预加载
 bilibili_json = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/bilibili_json.js
-# > 哔哩哔哩去除统一设置的皮肤
+# 哔哩哔哩去除统一设置的皮肤
 bilibili_json = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/bilibili_json.js
-# > 哔哩哔哩 1080P 高码率 + 4K (番剧和影视除外)
+# 哔哩哔哩 1080P 高码率 + 4K (番剧和影视除外)
 bilibili_json = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/bilibili_json.js
-# > 哔哩哔哩热搜发现
+# 哔哩哔哩热搜发现
 bilibili_json = type=http-response,pattern=^https://app.bilibili.com/x/v2/search/square,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/bilibili_json.js
-# > 哔哩哔哩推荐去广告
+# 哔哩哔哩推荐去广告
 bilibili_json = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/bilibili_json.js
-# > 哔哩哔哩追番去广告
+# 哔哩哔哩追番去广告
 bilibili_json = type=http-response,pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/bangumi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/bilibili_json.js
-# > 哔哩哔哩直播去广告
+# 哔哩哔哩直播去广告
 bilibili_json = type=http-response,pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/bilibili_json.js
-# > 哔哩哔哩标签页处理
+# 哔哩哔哩标签页处理
 bilibili_json = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/bilibili_json.js
-# > 哔哩哔哩我的页面处理
+# 哔哩哔哩我的页面处理
 bilibili_json = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/bilibili_json.js
-# > Adobe LightRoom 解锁 by deezertidal
+# Adobe LightRoom 解锁 by deezertidal
 http-response ^https:\/\/photos\.adobe\.io\/v2\/accounts* requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
-# > PhotoshopExpress 高级订阅 by deezertidal
+# PhotoshopExpress 高级订阅 by deezertidal
 http-response ^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/photoshop.js
 
 [MITM]
