@@ -1,9 +1,9 @@
-#!url=https://gist.githubusercontent.com/CHNJohnHK/11ed074de184feb119684232b593592e/raw/8f016d28e3770fca3872973783c878d472316b57/JohnHK_AD_Block_Shadowrocket.module
+#!url=https://github.com/CHNJohnHK/Proxy_Config/blob/742c137b35510f355aacb8e5efde7af5fb617deb/Shadowrocket/module/AD_Block.module
 #!name=AD Block + Unlock
 #!desc=JohnHK's Module
 # 仅供学习交流 🈲️商业用途
 # 部分转自他人
-# 建议开启 HTTPS 解密 教程 https://t.me/h5683577/3 *本频道与 JohnHK 无任何关系
+# 建议开启 HTTPS 解密 教程 https://t.me/h5683577/3 *此频道与 JohnHK 无任何关系
 [General]
 force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net
 
@@ -104,7 +104,7 @@ DOMAIN,bid.adview.cn,REJECT
 # 京东开屏广告屏蔽
 URL-REGEX,https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
 
-# 优酷去片头广告(by Choler)
+# 优酷去片头广告 by Choler
 # force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net
 URL-REGEX,^http:\/\/.*\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 
