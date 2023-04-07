@@ -158,7 +158,6 @@ rules:
   - GEOSITE,bahamut,巴哈姆特
   - GEOSITE,spotify,Spotify
   - GEOSITE,geolocation-!cn,其他
-
   - GEOIP,google,Google
   - GEOIP,netflix,NETFLIX
   - GEOIP,telegram,Telegram
@@ -173,7 +172,6 @@ rules:
   - DOMAIN-SUFFIX,kookapp.cn,DIRECT
   - DOMAIN-SUFFIX,gitee.com,DIRECT
   - DOMAIN-SUFFIX,gitee.cn,DIRECT
-  # 去广告
  # Google
   - DOMAIN-SUFFIX,googletraveladservices.com,REJECT
   - DOMAIN,dl.google.com,REJECT
@@ -203,7 +201,6 @@ rules:
   - DOMAIN-SUFFIX,jcollection.shuqireader.com,REJECT
   - DOMAIN-SUFFIX,stats.jpush.cn,REJECT
   - DOMAIN-SUFFIX,sdk.kaijiawan.com,REJECT
-  # Tencent 数据收集
   - DOMAIN,ios.bugly.qq.com,REJECT
   - DOMAIN,pingma.qq.com,REJECT
   # Baidu
@@ -228,13 +225,12 @@ rules:
   - DOMAIN-SUFFIX,t10.baidu.com,REJECT
   - DOMAIN-SUFFIX,t11.baidu.com,REJECT
   - DOMAIN-SUFFIX,t12.baidu.com,REJECT
- # Baidu 数据收集
   - DOMAIN,hpd.baidu.com,REJECT
   - DOMAIN,hm.baidu.com,REJECT
   - DOMAIN-SUFFIX,pos.baidu.com,REJECT
  # 高德地图
   - DOMAIN,optimus-ads.amap.com,REJECT
- # 广告联盟 by h2y
+ # 广告联盟
   - DOMAIN-SUFFIX,doubleclick.net,REJECT
   - DOMAIN-SUFFIX,zhihu-analytics.zhihu.com,REJECT
   - DOMAIN-SUFFIX,log.cmbchina.com,REJECT
@@ -310,7 +306,7 @@ rules:
  # 爱奇艺
   - DOMAIN,cr-status.iqiyi.com,REJECT
   - DOMAIN,f74f7f7765f8a2f6.ngaa.net.cn,REJECT
-  - DOMAIN,ef-dongfeng.tanx.com,REJECT
+  - DOMAIN,ef-dongfeng.tanx.com,RoEJECT
   - DOMAIN,iqiyim.adtrack.enlightent.cn,REJECT
   - DOMAIN,t7z.cupid.iqiyi.com,DIRECT
   - DOMAIN,paopao-monitor.iqiyi.com,REJECT
