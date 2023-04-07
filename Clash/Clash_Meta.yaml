@@ -163,8 +163,16 @@ rules:
   - GEOIP,netflix,NETFLIX
   - GEOIP,telegram,Telegram
   - GEOIP,twitter,Twitter
-  - GEOSITE,CN,国内
-  - GEOIP,CN,国内
+  - GEOSITE,CN,DIRECT
+  - GEOIP,CN,DIRECT
+ # 省流
+  - DOMAIN-SUFFIX,gov.cn,DIRECT
+  - DOMAIN-SUFFIX,gov.hk,DIRECT
+  - DOMAIN-SUFFIX,gov.mo,DIRECT
+  - DOMAIN-SUFFIX,un.org,DIRECT
+  - DOMAIN-SUFFIX,kookapp,DIRECT
+  - DOMAIN-SUFFIX,gitee.com,DIRECT
+  - DOMAIN-SUFFIX,gitee.cn,DIRECT
   # 去广告
  # Google
   - DOMAIN-SUFFIX,googletraveladservices.com,REJECT
