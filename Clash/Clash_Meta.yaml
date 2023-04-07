@@ -170,7 +170,7 @@ rules:
   - DOMAIN-SUFFIX,gov.hk,DIRECT
   - DOMAIN-SUFFIX,gov.mo,DIRECT
   - DOMAIN-SUFFIX,un.org,DIRECT
-  - DOMAIN-SUFFIX,kookapp,DIRECT
+  - DOMAIN-SUFFIX,kookapp.cn,DIRECT
   - DOMAIN-SUFFIX,gitee.com,DIRECT
   - DOMAIN-SUFFIX,gitee.cn,DIRECT
   # 去广告
@@ -179,15 +179,7 @@ rules:
   - DOMAIN,dl.google.com,REJECT
   - DOMAIN,safebrowsing.googleapis.com,REJECT
  # Tencent 
-  - DOMAIN-SUFFIX,tetrack.qq.com,REJECT
-  - DOMAIN-SUFFIX,tpns.tencent.com,REJECT
-  - DOMAIN-SUFFIX,api.poll.video.qq.com,REJECT
-  - DOMAIN-SUFFIX,static-res.qq.com,REJECT
-  - DOMAIN-SUFFIX,stat.tpns.tencent.com,REJECT
   - DOMAIN,h.trace.qq.com,REJECT
-  - DOMAIN-SUFFIX,e.qq.com,REJECT
-  - DOMAIN-SUFFIX,gdt.qq.com,REJECT
-  - DOMAIN-SUFFIX,l.qq.com,REJECT
   - DOMAIN,adsmind.apdcdn.tc.qq.com,REJECT
   - DOMAIN,adsmind.gdtimg.com,REJECT
   - DOMAIN,adsmind.tc.qq.com,REJECT
@@ -199,6 +191,14 @@ rules:
   - DOMAIN,wa.gtimg.com,REJECT
   - DOMAIN,wxsnsdy.wxs.qq.com,REJECT
   - DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT
+  - DOMAIN-SUFFIX,tetrack.qq.com,REJECT
+  - DOMAIN-SUFFIX,tpns.tencent.com,REJECT
+  - DOMAIN-SUFFIX,api.poll.video.qq.com,REJECT
+  - DOMAIN-SUFFIX,static-res.qq.com,REJECT
+  - DOMAIN-SUFFIX,stat.tpns.tencent.com,REJECT
+  - DOMAIN-SUFFIX,e.qq.com,REJECT
+  - DOMAIN-SUFFIX,gdt.qq.com,REJECT
+  - DOMAIN-SUFFIX,l.qq.com,REJECT
   - DOMAIN-SUFFIX,mi.gdt.qq.com,REJECT
   - DOMAIN-SUFFIX,jcollection.shuqireader.com,REJECT
   - DOMAIN-SUFFIX,stats.jpush.cn,REJECT
@@ -207,13 +207,13 @@ rules:
   - DOMAIN,ios.bugly.qq.com,REJECT
   - DOMAIN,pingma.qq.com,REJECT
   # Baidu
-  - DOMAIN-SUFFIX,cpro.baidu.com,REJECT
   - DOMAIN,afd.baidu.com,REJECT
   - DOMAIN,als.baidu.com,REJECT
   - DOMAIN,duclick.baidu.com,REJECT
   - DOMAIN,mobads.baidu.com,REJECT
   - DOMAIN,mobads-logs.baidu.com,REJECT
   - DOMAIN,nsclick.baidu.com,REJECT
+  - DOMAIN-SUFFIX,cpro.baidu.com,REJECT
   - DOMAIN-SUFFIX,eclick.baidu.com,REJECT
   - DOMAIN-SUFFIX,entry.baidu.com,REJECT
   - DOMAIN-SUFFIX,hmma.baidu.com,REJECT
