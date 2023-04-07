@@ -306,7 +306,7 @@ rules:
  # 爱奇艺
   - DOMAIN,cr-status.iqiyi.com,REJECT
   - DOMAIN,f74f7f7765f8a2f6.ngaa.net.cn,REJECT
-  - DOMAIN,ef-dongfeng.tanx.com,RoEJECT
+  - DOMAIN,ef-dongfeng.tanx.com,REJECT
   - DOMAIN,iqiyim.adtrack.enlightent.cn,REJECT
   - DOMAIN,t7z.cupid.iqiyi.com,DIRECT
   - DOMAIN,paopao-monitor.iqiyi.com,REJECT
