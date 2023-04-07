@@ -324,4 +324,6 @@ rules:
   - DOMAIN,iqiyi-mipdx.cn.miaozhen.com,REJECT
   - DOMAIN,show.ssports.com,REJECT
   - DOMAIN-SUFFIX,afdback.ppsimg.com,REJECT
+  # 不知名
+  - DOMAIN-SUFFIX,adacale.de,REJECT
   - MATCH,其他
