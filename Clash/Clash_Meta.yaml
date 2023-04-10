@@ -93,7 +93,7 @@ proxies:
 
 proxy-groups:
 
-  - {name: 默认, type: select, proxies: [DIRECT, 🇭🇰 香港, 🇹🇼 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇺🇸 美国, 🌏 其它地区, 🌐 全部节点, ♻️ 自动选择 ]}
+  - {name: 默认, type: select, proxies: [DIRECT, 🇭🇰 香港, 🇹🇼 台湾, 🇯🇵 日本, 🇸🇬 新加坡, 🇺🇸 美国, 🌏 其它地区, 🌐 全部节点, ♻️ 自动选择]}
 
 #  - {name: dns, type: select, proxies: [自动选择, DIRECT, 默认, 香港, 台湾, 日本, 新加坡, 美国, 其它地区, 全部节点]}
 
@@ -122,11 +122,10 @@ proxy-groups:
   
   - {name: 🐟 漏网之鱼, <<: *pr}
 
-  - {name: 自动选择, proxies: [DIRECT], <<: *use, tolerance: 2, type: url-test}
+  - {name: ♻️ 自动选择, proxies: [DIRECT], <<: *use, tolerance: 2, type: url-test}
 
 rules:
 
-  - GEOSITE,github,github
   - GEOSITE,twitter,📫 社交媒体
   - GEOSITE,youtube,🖥 流媒体
   - GEOSITE,google,Google
