@@ -298,4 +298,4 @@ rules:
   - DOMAIN-SUFFIX,afdback.ppsimg.com,REJECT
   # 不知名
   - DOMAIN-SUFFIX,adacale.de,REJECT
-  - MATCH,其他
+  - MATCH,🐟 漏网之鱼
