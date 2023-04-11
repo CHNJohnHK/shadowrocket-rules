@@ -104,7 +104,7 @@ proxy-groups:
 
   - {name: 🇸🇬 新加坡, <<: *use, filter: "(?i)^(?!.*(?:us)).*(新|sg|singapore)"}
 
-  - {name: 🌏 其它地区, <<: *use, filter: "(?i)^(?!.*(?:🇬🇧|英|英国|uk|united kingdom|unitedkingdom|🇹🇭|泰|泰国|TH|Thailand|🇩🇪|德|德国|de|germany|🇨🇦|加拿大|ca|canada)).*"}
+  - {name: 🌏 其它地区, <<: *use, filter: "(?i)🇬🇧|英|uk|united kingdom|unitedkingdom|🇹🇭|泰|TH|Thailand|🇩🇪|德|de|germany|🇨🇦|加拿大|ca|canada|🇦🇺|澳|澳大利亚|au|australia|🇮🇳|印|in|indian|🇰🇷|韩|kr|korea|🇹🇷|土|火鸡|tr|türkiye|"}
 
   - {name: 🌐 全部节点, <<: *use}
   
